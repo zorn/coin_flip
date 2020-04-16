@@ -1,5 +1,6 @@
 version: "3"
 services:
-  app:
-    # env_file: .env
-    command: iex -S mix
+  builder:
+    env_file: production.env
+    build: .
+  

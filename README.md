@@ -2,6 +2,17 @@
 
 This project is a WIP demo of a Docker Compose example that containerizes an typical Elixir Phoenix project.
 
+To produce the release binary run:
+
+> $ docker-compose up
+
+To clean docker:
+
+> $ docker container rm -f (docker container ls -aq)
+> $ docker image rm -f (docker image ls -aq)
+> $ docker network prune --force
+> $ docker volume prune --force
+
 ## Related Documentations
 
 * [mix release, assembles a self-contained release for the current project](https://hexdocs.pm/mix/Mix.Tasks.Release.html)
